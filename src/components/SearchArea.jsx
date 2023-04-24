@@ -3,7 +3,7 @@ import ContinentsDropdown from './ContinentsDropdown'
 
 const SearchArea = () => {
     return(
-        <div className="bg-white my-8 px-2 flex flex-col gap-8">
+        <div className="bg-white dark:bg-transparent my-8 p-2 flex flex-col gap-4">
             <SearchBar />
             <ContinentsDropdown />
         </div>

@@ -8,7 +8,7 @@ const ContinentsDropdown = () => {
     }
 
     return(
-        <select value={selectedContinent} onChange={handleOptionChange} className='bg-white shadow-lg rounded outline-none w-[200px] p-4 appearance-none'>
+        <select value={selectedContinent} onChange={handleOptionChange} className='bg-white dark:bg-dark-blue shadow-lg rounded outline-none w-[200px] p-4 appearance-none'>
             <option value="" className=''>Filter By Continent</option>
             <option value="Africa">Africa</option>
             <option value="America">America</option>
