@@ -6,7 +6,7 @@ import Home from './pages/Home'
 
 function App() {
 
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState('')
 
   const handleThemeChange = () => {
   setTheme(theme === 'light' ? 'dark' : 'light')
@@ -21,7 +21,7 @@ function App() {
   }, [theme])
 
   useEffect(() => {
-  localStorage.theme = theme
+    localStorage.theme = theme === 'light' ? 'light' : 'dark'
   }, [theme])
 
   return (
